@@ -16,8 +16,7 @@ This project currently supports the following websites:
 1. [BBC Good Food](https://www.bbcgoodfood.com)
 2. [Drive Me Hungry](https://drivemehungry.com)
 3. [China Sichuan Food](https://www.chinasichuanfood.com)
-4. [AllRecipes](https://www.allrecipes.com)
-5. [Epicurious](https://www.epicurious.com)
+4. [Epicurious](https://www.epicurious.com)
 
 More websites may be supported, as the project dynamically handles most common recipe structures.
 
