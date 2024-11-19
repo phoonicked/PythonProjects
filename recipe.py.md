@@ -17,6 +17,7 @@ This project currently supports the following websites:
 2. [Drive Me Hungry](https://drivemehungry.com)
 3. [China Sichuan Food](https://www.chinasichuanfood.com)
 4. [Epicurious](https://www.epicurious.com)
+5. [Jamie Oliver](https://www.jamieoliver.com)
 
 More websites may be supported, as the project dynamically handles most common recipe structures.
 
