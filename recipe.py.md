@@ -31,7 +31,7 @@ More websites may be supported, as the project dynamically handles most common r
 3. **Dependencies**:
    Install the required Python packages:
    ```bash
-   pip install selenium beautifulsoup4 google-auth google-auth-oauthlib google-auth-httplib2
+   pip install selenium beautifulsoup4 google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2
 
 
 4. **Selenium**:
