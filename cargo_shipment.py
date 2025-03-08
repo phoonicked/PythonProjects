@@ -1,3 +1,29 @@
+'''
+Problem Statement:
+Design a system to track cargo shipments.
+Create a Cargo class with the following attributes:
+cargo_id: Unique identifier (string).
+origin: Starting location (string).
+destination: Ending location (string).
+volume: Volume of the shipment (integer/float).
+shipping_date: Date as a string (or datetime object).
+Include a method to display cargo details.
+
+Create a ShipmentTracker class that manages multiple Cargo objects. It should include:
+A method add_cargo(cargo: Cargo) to add a shipment.
+A method remove_cargo(cargo_id: str) to remove a shipment by its ID.
+A method get_total_volume(shipping_date: str) -> float to return the total volume of shipments scheduled on that date.
+
+Example:
+cargo1 = Cargo("C001", "London", "Rotterdam", 1000, "2025-04-10")
+cargo2 = Cargo("C002", "London", "Antwerp", 1500, "2025-04-10")
+
+tracker = ShipmentTracker()
+tracker.add_cargo(cargo1)
+tracker.add_cargo(cargo2)
+print(tracker.get_total_volume("2025-04-10"))  # Expected output: 2500
+'''
+
 class Cargo:
     def __init__(self, cargo_id, origin, destination, volume, shipping_data):
         self.cargo_id = cargo_id

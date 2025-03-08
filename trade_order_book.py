@@ -1,3 +1,37 @@
+'''
+Problem Statement:
+Implement a simplified order book for commodity trading.
+
+Create an Order class with the following attributes:
+
+order_id: Unique identifier (string).
+commodity: E.g., "Oil" or "Gas".
+quantity: Amount of commodity.
+price: Price per unit.
+order_type: Either "buy" or "sell".
+Create an OrderBook class that can:
+
+Add orders (add_order).
+Cancel orders (cancel_order).
+Match orders: Implement a method match_orders(commodity: str) that 
+finds one buy order and one sell order for the same commodity such that 
+the buy price is greater than or equal to the sell price, and then 
+removes them from the book (simulating a trade).
+
+Example:
+order1 = Order("O001", "Oil", 100, 50, "buy")
+order2 = Order("O002", "Oil", 100, 45, "sell")
+order_book = OrderBook()
+order_book.add_order(order1)
+order_book.add_order(order2)
+matched = order_book.match_orders("Oil")
+if matched:
+    print(f"Matched: {matched[0].order_id} with {matched[1].order_id}")
+else:
+    print("No match found")
+# Expected: Matched orders because 50 >= 45.
+'''
+
 class Order:
     def __init__(self, order_id, commodity, quantity, price, order_type):
         self.order_id = order_id

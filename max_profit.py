@@ -1,3 +1,16 @@
+'''
+Problem Statement:
+Given an array prices where each element represents the price of a commodity (e.g., crude oil) 
+on a given day, write a function max_profit(prices: List[int]) -> int that calculates 
+the maximum profit you can achieve by buying on one day and selling on a later day. 
+If no profit is possible, return 0.
+
+Example:
+Input: prices = [100, 180, 260, 310, 40, 535, 695]
+Output: 655
+Explanation: The best strategy is to buy at 40 and sell at 695.
+'''
+
 from typing import List
 
 def max_profit(prices: List[int]) -> int:
